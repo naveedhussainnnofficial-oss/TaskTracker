@@ -1,8 +1,9 @@
 # TaskTracker
 
 
-simple task tracker with CRUD operations
+Timple task tracker with CRUD operations
 
-- add task
-- remove task 
-- list all tasks
+- Add Task
+- Remove Task 
+- List all Tasks
+- Update Existing Tasks
