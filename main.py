@@ -27,7 +27,7 @@ def add_task(task:Task):
 @app.delete("/tasks/{task_id}")
 def delete_task(task_id: int):
     if task_id<1:
-        raise HTTPException(status_code=404 , detail="task not found")
+        raise HTTPException(status_code=400 , detail="bad request")
     for x in tasks:
         if x["id"] == task_id:
             tasks.remove(x)
