@@ -32,6 +32,6 @@ def delete_task(task_id: int):
         if x["id"] == task_id:
             tasks.remove(x)
             return {"message": "deleted"}
-    raise HTTPException (status_code="404" detail:"message not found")
+    raise HTTPException (status_code="404",detail:"message not found")
     
 
